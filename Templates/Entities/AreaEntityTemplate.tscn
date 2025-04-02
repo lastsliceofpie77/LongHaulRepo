@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvdtnaal7d26f"]
+
+[ext_resource type="Script" uid="uid://b3tgnb1y0hgk1" path="res://Entities/Entity.gd" id="1_gmsvl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nam4a"]
+resource_local_to_scene = true
+size = Vector2(16, 16)
+
+[node name="AreaEntity" type="Area2D" groups=["entities"]]
+collision_layer = 2
+collision_mask = 530
+script = ExtResource("1_gmsvl")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nam4a")
